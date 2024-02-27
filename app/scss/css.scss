@@ -1,0 +1,10 @@
+//import mixins
+@import "../_scss-vars/vars";
+@import "../_scss-vars/animate";
+@import "../_scss-vars/box";
+//@import "../_scss-vars/typo";
+//@import "../_scss-vars/bars";
+
+//if used sprites uncomment this
+//@import "../_scss-vars/sprite";
+@include cssVars();

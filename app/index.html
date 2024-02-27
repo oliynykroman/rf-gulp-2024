@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/css.min.css">
+</head>
+
+<body>
+@@include('head.html')
+<!-- @@loop('PATH TO FILE', 'PATH TO JSON DATA FILE') -->
+<main>
+    <h1>Init html</h1>
+    <article>
+        <section class="image">@@include('picture.html', {"name":"example"})</section>
+    </article>
+</main>
+
+<script rel="script" src="js/main.min.js" type="text/javascript"></script>
+</body>
+
+</html>
