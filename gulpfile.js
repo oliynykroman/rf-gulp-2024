@@ -15,7 +15,7 @@ const settings = {
 
     //property contain object for start configuration
     src: {
-        html: ['app/**/*.html', '!app/template/**/*.*'],
+        html: ['app/**/*.html', 'app/template/**/*.*'],
         js: 'app/js/*.js',
         style: ['app/scss/*.scss'],
         cleanCss: ['app/css/*.css'],
@@ -123,7 +123,6 @@ const html = () => {
         gulp
             .src(settings.src.html)
             .pipe(plumber())
-            // .pipe(rigger())
             .pipe(fileInclude(settings.htmlInlcludeSettings))
             .pipe(embedSvg({
                 selectors: '.inline-svg'

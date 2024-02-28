@@ -1,0 +1,21 @@
+.footer {
+  display: grid;
+  grid-template-columns:1fr 2fr 2fr 2fr;
+  grid-template-areas:"address footer-nav-1 footer-nav-2 footer-nav-3";
+
+  .address {
+    grid-area: address;
+  }
+
+  .footer-nav-1 {
+    grid-area: footer-nav-1;
+  }
+
+  .footer-nav-2 {
+    grid-area: footer-nav-2;
+  }
+
+  .footer-nav-3 {
+    grid-area: footer-nav-3;
+  }
+}

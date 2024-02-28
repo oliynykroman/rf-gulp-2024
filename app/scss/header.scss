@@ -1,0 +1,17 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:"logo navigation toggle";
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .nav {
+    grid-area: navigation;
+  }
+
+  .toggle-button {
+    grid-area: toggle;
+  }
+}

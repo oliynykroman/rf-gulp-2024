@@ -1,3 +1,5 @@
+@import 'node_modules/modern-normalize/modern-normalize';
+
 //import mixins
 @import "../_scss-vars/vars";
 @import "../_scss-vars/animate";
@@ -8,3 +10,18 @@
 //if used sprites uncomment this
 //@import "../_scss-vars/sprite";
 @include cssVars();
+
+@import "header";
+@import "footer";
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
